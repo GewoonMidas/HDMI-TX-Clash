@@ -1,0 +1,69 @@
+{
+    "components": [
+        "I2CTest_system_system0",
+        "system"
+    ],
+    "dependencies": {
+        "transitive": [
+            "Hdmi.I2CSlave.i2cSlave",
+            "Hdmi.I2C.i2c",
+            "Hdmi.I2C.BitMaster.bitMaster",
+            "Hdmi.I2C.ByteMaster.byteMaster"
+        ]
+    },
+    "version": "unstable",
+    "top_component": {
+        "name": "system",
+        "ports_flat": [
+            {
+                "direction": "out",
+                "name": "result",
+                "width": 794,
+                "is_clock": false,
+                "type_name": "[793:0]"
+            }
+        ]
+    },
+    "domains": {
+        "IntelSystem": {
+            "reset_kind": "Asynchronous",
+            "active_edge": "Rising",
+            "period": 10000,
+            "init_behavior": "Defined",
+            "reset_polarity": "ActiveHigh"
+        },
+        "XilinxSystem": {
+            "reset_kind": "Synchronous",
+            "active_edge": "Rising",
+            "period": 10000,
+            "init_behavior": "Defined",
+            "reset_polarity": "ActiveHigh"
+        },
+        "System": {
+            "reset_kind": "Asynchronous",
+            "active_edge": "Rising",
+            "period": 10000,
+            "init_behavior": "Defined",
+            "reset_polarity": "ActiveHigh"
+        }
+    },
+    "flags": [
+        20,
+        20
+    ],
+    "hash": "29b8a00a57099a187118a45356b1a0e5f49122f461cd3c5bae8b221fb7f25359",
+    "files": [
+        {
+            "name": "system_shim.cpp",
+            "sha256": "a89fb17f0c386f41ed15b52d435cf228c42efa047ce89bff336f2cc4a669c7e2"
+        },
+        {
+            "name": "I2CTest_system_system0.v",
+            "sha256": "1998c53b3fd738eeb577675003893d5dc6a44299e1d80474927ba16481cbe267"
+        },
+        {
+            "name": "system.v",
+            "sha256": "a94d278e0ab8f48895a2a856ffff6eb3755a71a4abbbf7a30aeb730b4b3a8382"
+        }
+    ]
+}

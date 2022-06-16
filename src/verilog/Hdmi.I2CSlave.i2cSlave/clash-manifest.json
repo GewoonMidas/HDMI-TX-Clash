@@ -1,0 +1,85 @@
+{
+    "components": [
+        "slave"
+    ],
+    "dependencies": {
+        "transitive": []
+    },
+    "version": "unstable",
+    "top_component": {
+        "name": "slave",
+        "ports_flat": [
+            {
+                "direction": "in",
+                "domain": "System",
+                "name": "clk",
+                "width": 1,
+                "is_clock": true,
+                "type_name": ""
+            },
+            {
+                "direction": "in",
+                "name": "eta1_0",
+                "width": 1,
+                "is_clock": false,
+                "type_name": ""
+            },
+            {
+                "direction": "in",
+                "name": "eta1_1",
+                "width": 1,
+                "is_clock": false,
+                "type_name": ""
+            },
+            {
+                "direction": "out",
+                "name": "result",
+                "width": 793,
+                "is_clock": false,
+                "type_name": "[792:0]"
+            }
+        ]
+    },
+    "domains": {
+        "IntelSystem": {
+            "reset_kind": "Asynchronous",
+            "active_edge": "Rising",
+            "period": 10000,
+            "init_behavior": "Defined",
+            "reset_polarity": "ActiveHigh"
+        },
+        "XilinxSystem": {
+            "reset_kind": "Synchronous",
+            "active_edge": "Rising",
+            "period": 10000,
+            "init_behavior": "Defined",
+            "reset_polarity": "ActiveHigh"
+        },
+        "System": {
+            "reset_kind": "Asynchronous",
+            "active_edge": "Rising",
+            "period": 10000,
+            "init_behavior": "Defined",
+            "reset_polarity": "ActiveHigh"
+        }
+    },
+    "flags": [
+        20,
+        20
+    ],
+    "hash": "3165bb899bc7af72af849049411872421aec9ce8c2bbee386acedd8448c0991b",
+    "files": [
+        {
+            "name": "slave_shim.cpp",
+            "sha256": "d8fd75d93de1fef75c2faa50db7292b8dde47444df521f8ff04879ce0e57d43b"
+        },
+        {
+            "name": "slave.sdc",
+            "sha256": "13d4c1aafcc09a84d81d3b60d513cb901384a10e27e5a5a16572a600f15895f3"
+        },
+        {
+            "name": "slave.v",
+            "sha256": "608dc5a2b386ac349c940f04352f5d95ba568441fc26e491e776d6c0397af8b6"
+        }
+    ]
+}

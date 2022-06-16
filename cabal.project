@@ -1,0 +1,4 @@
+packages:
+  hdmi-tx.cabal
+
+write-ghc-environment-files: always

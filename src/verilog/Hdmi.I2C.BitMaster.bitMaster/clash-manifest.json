@@ -1,0 +1,167 @@
+{
+    "components": [
+        "Hdmi_I2C_BitMaster_bitMaster_bitStateMachine",
+        "Hdmi_I2C_BitMaster_bitMaster_busStatusCtrl",
+        "bitmaster"
+    ],
+    "dependencies": {
+        "transitive": []
+    },
+    "version": "unstable",
+    "top_component": {
+        "name": "bitmaster",
+        "ports_flat": [
+            {
+                "direction": "in",
+                "domain": "System",
+                "name": "clk",
+                "width": 1,
+                "is_clock": true,
+                "type_name": ""
+            },
+            {
+                "direction": "in",
+                "domain": "System",
+                "name": "arst",
+                "width": 1,
+                "is_clock": false,
+                "type_name": ""
+            },
+            {
+                "direction": "in",
+                "domain": "System",
+                "name": "gen",
+                "width": 1,
+                "is_clock": false,
+                "type_name": ""
+            },
+            {
+                "direction": "in",
+                "name": "rst",
+                "width": 1,
+                "is_clock": false,
+                "type_name": ""
+            },
+            {
+                "direction": "in",
+                "name": "ena",
+                "width": 1,
+                "is_clock": false,
+                "type_name": ""
+            },
+            {
+                "direction": "in",
+                "name": "clkCnt",
+                "width": 16,
+                "is_clock": false,
+                "type_name": "[15:0]"
+            },
+            {
+                "direction": "in",
+                "name": "cmd",
+                "width": 3,
+                "is_clock": false,
+                "type_name": "[2:0]"
+            },
+            {
+                "direction": "in",
+                "name": "din",
+                "width": 1,
+                "is_clock": false,
+                "type_name": ""
+            },
+            {
+                "direction": "in",
+                "name": "i2cI",
+                "width": 2,
+                "is_clock": false,
+                "type_name": "[1:0]"
+            },
+            {
+                "direction": "out",
+                "name": "cmdAck",
+                "width": 1,
+                "is_clock": false,
+                "type_name": ""
+            },
+            {
+                "direction": "out",
+                "name": "al",
+                "width": 1,
+                "is_clock": false,
+                "type_name": ""
+            },
+            {
+                "direction": "out",
+                "name": "dout",
+                "width": 1,
+                "is_clock": false,
+                "type_name": ""
+            },
+            {
+                "direction": "out",
+                "name": "busy",
+                "width": 1,
+                "is_clock": false,
+                "type_name": ""
+            },
+            {
+                "direction": "out",
+                "name": "i2cO",
+                "width": 4,
+                "is_clock": false,
+                "type_name": "[3:0]"
+            }
+        ]
+    },
+    "domains": {
+        "IntelSystem": {
+            "reset_kind": "Asynchronous",
+            "active_edge": "Rising",
+            "period": 10000,
+            "init_behavior": "Defined",
+            "reset_polarity": "ActiveHigh"
+        },
+        "XilinxSystem": {
+            "reset_kind": "Synchronous",
+            "active_edge": "Rising",
+            "period": 10000,
+            "init_behavior": "Defined",
+            "reset_polarity": "ActiveHigh"
+        },
+        "System": {
+            "reset_kind": "Asynchronous",
+            "active_edge": "Rising",
+            "period": 10000,
+            "init_behavior": "Defined",
+            "reset_polarity": "ActiveHigh"
+        }
+    },
+    "flags": [
+        20,
+        20
+    ],
+    "hash": "b9f64d49093fd6d9c187cf15d988d786f5fcf11ed04e7521ee3b0ff35812ae5b",
+    "files": [
+        {
+            "name": "bitmaster_shim.cpp",
+            "sha256": "1c14cb73a741a0a9749fb5bae7150434662eda60b00581bf18990360b06ae5e5"
+        },
+        {
+            "name": "bitmaster.sdc",
+            "sha256": "13d4c1aafcc09a84d81d3b60d513cb901384a10e27e5a5a16572a600f15895f3"
+        },
+        {
+            "name": "Hdmi_I2C_BitMaster_bitMaster_bitStateMachine.v",
+            "sha256": "d9e66dc412182e191d271808d8d45d54f5e5ecc131194c4d7f6bfac20210265a"
+        },
+        {
+            "name": "Hdmi_I2C_BitMaster_bitMaster_busStatusCtrl.v",
+            "sha256": "232315f79365b347486e1886ea953d7702aa90aeadaabfedbfbf506a1939d2db"
+        },
+        {
+            "name": "bitmaster.v",
+            "sha256": "69219efae849ddaf87a53f77cd1e6603b302219832c0d2fb5b2ea1f5b94e6523"
+        }
+    ]
+}

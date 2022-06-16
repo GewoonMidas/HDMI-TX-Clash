@@ -1,0 +1,164 @@
+{
+    "components": [
+        "bytemaster"
+    ],
+    "dependencies": {
+        "transitive": []
+    },
+    "version": "unstable",
+    "top_component": {
+        "name": "bytemaster",
+        "ports_flat": [
+            {
+                "direction": "in",
+                "domain": "System",
+                "name": "clk",
+                "width": 1,
+                "is_clock": true,
+                "type_name": ""
+            },
+            {
+                "direction": "in",
+                "domain": "System",
+                "name": "arst",
+                "width": 1,
+                "is_clock": false,
+                "type_name": ""
+            },
+            {
+                "direction": "in",
+                "domain": "System",
+                "name": "gen",
+                "width": 1,
+                "is_clock": false,
+                "type_name": ""
+            },
+            {
+                "direction": "in",
+                "name": "rst",
+                "width": 1,
+                "is_clock": false,
+                "type_name": ""
+            },
+            {
+                "direction": "in",
+                "name": "start",
+                "width": 1,
+                "is_clock": false,
+                "type_name": ""
+            },
+            {
+                "direction": "in",
+                "name": "stop",
+                "width": 1,
+                "is_clock": false,
+                "type_name": ""
+            },
+            {
+                "direction": "in",
+                "name": "read",
+                "width": 1,
+                "is_clock": false,
+                "type_name": ""
+            },
+            {
+                "direction": "in",
+                "name": "write",
+                "width": 1,
+                "is_clock": false,
+                "type_name": ""
+            },
+            {
+                "direction": "in",
+                "name": "ackIn",
+                "width": 1,
+                "is_clock": false,
+                "type_name": ""
+            },
+            {
+                "direction": "in",
+                "name": "din",
+                "width": 8,
+                "is_clock": false,
+                "type_name": "[7:0]"
+            },
+            {
+                "direction": "in",
+                "name": "bitResp",
+                "width": 3,
+                "is_clock": false,
+                "type_name": "[2:0]"
+            },
+            {
+                "direction": "out",
+                "name": "hostAck",
+                "width": 1,
+                "is_clock": false,
+                "type_name": ""
+            },
+            {
+                "direction": "out",
+                "name": "ackOut",
+                "width": 1,
+                "is_clock": false,
+                "type_name": ""
+            },
+            {
+                "direction": "out",
+                "name": "dout",
+                "width": 8,
+                "is_clock": false,
+                "type_name": "[7:0]"
+            },
+            {
+                "direction": "out",
+                "name": "bitCtrl",
+                "width": 4,
+                "is_clock": false,
+                "type_name": "[3:0]"
+            }
+        ]
+    },
+    "domains": {
+        "IntelSystem": {
+            "reset_kind": "Asynchronous",
+            "active_edge": "Rising",
+            "period": 10000,
+            "init_behavior": "Defined",
+            "reset_polarity": "ActiveHigh"
+        },
+        "XilinxSystem": {
+            "reset_kind": "Synchronous",
+            "active_edge": "Rising",
+            "period": 10000,
+            "init_behavior": "Defined",
+            "reset_polarity": "ActiveHigh"
+        },
+        "System": {
+            "reset_kind": "Asynchronous",
+            "active_edge": "Rising",
+            "period": 10000,
+            "init_behavior": "Defined",
+            "reset_polarity": "ActiveHigh"
+        }
+    },
+    "flags": [
+        20,
+        20
+    ],
+    "hash": "00650a233bc1101d35d9bf418f30b8789475119286f71ccaf02472404a372bc9",
+    "files": [
+        {
+            "name": "bytemaster_shim.cpp",
+            "sha256": "aa2d26e8bb4b99490f0002fd59aee497e7b6ebe6c68d0ab071ca41931c3d7c14"
+        },
+        {
+            "name": "bytemaster.sdc",
+            "sha256": "13d4c1aafcc09a84d81d3b60d513cb901384a10e27e5a5a16572a600f15895f3"
+        },
+        {
+            "name": "bytemaster.v",
+            "sha256": "a407b8b9c6ba7d63c25d3dfeaccc7a87271bb9a558a689c900dc6a58367201fb"
+        }
+    ]
+}

@@ -1,0 +1,203 @@
+{
+    "components": [
+        "HDMIComponent"
+    ],
+    "dependencies": {
+        "transitive": [
+            "Hdmi.I2C.i2c",
+            "Hdmi.I2C.BitMaster.bitMaster",
+            "Hdmi.I2C.ByteMaster.byteMaster"
+        ]
+    },
+    "version": "unstable",
+    "top_component": {
+        "name": "HDMIComponent",
+        "ports_flat": [
+            {
+                "direction": "in",
+                "domain": "System",
+                "name": "clk_25",
+                "width": 1,
+                "is_clock": true,
+                "type_name": ""
+            },
+            {
+                "direction": "in",
+                "domain": "System",
+                "name": "arst",
+                "width": 1,
+                "is_clock": false,
+                "type_name": ""
+            },
+            {
+                "direction": "in",
+                "domain": "System",
+                "name": "en",
+                "width": 1,
+                "is_clock": false,
+                "type_name": ""
+            },
+            {
+                "direction": "in",
+                "name": "rst",
+                "width": 1,
+                "is_clock": false,
+                "type_name": ""
+            },
+            {
+                "direction": "in",
+                "name": "pcsda",
+                "width": 1,
+                "is_clock": false,
+                "type_name": ""
+            },
+            {
+                "direction": "in",
+                "name": "iR",
+                "width": 10,
+                "is_clock": false,
+                "type_name": "[9:0]"
+            },
+            {
+                "direction": "in",
+                "name": "iG",
+                "width": 10,
+                "is_clock": false,
+                "type_name": "[9:0]"
+            },
+            {
+                "direction": "in",
+                "name": "iB",
+                "width": 10,
+                "is_clock": false,
+                "type_name": "[9:0]"
+            },
+            {
+                "direction": "in",
+                "name": "hs",
+                "width": 1,
+                "is_clock": false,
+                "type_name": ""
+            },
+            {
+                "direction": "in",
+                "name": "vs",
+                "width": 1,
+                "is_clock": false,
+                "type_name": ""
+            },
+            {
+                "direction": "in",
+                "name": "de",
+                "width": 1,
+                "is_clock": false,
+                "type_name": ""
+            },
+            {
+                "direction": "out",
+                "name": "oR",
+                "width": 1,
+                "is_clock": false,
+                "type_name": ""
+            },
+            {
+                "direction": "out",
+                "name": "oG",
+                "width": 1,
+                "is_clock": false,
+                "type_name": ""
+            },
+            {
+                "direction": "out",
+                "name": "oB",
+                "width": 10,
+                "is_clock": false,
+                "type_name": "[9:0]"
+            },
+            {
+                "direction": "out",
+                "name": "oVS",
+                "width": 10,
+                "is_clock": false,
+                "type_name": "[9:0]"
+            },
+            {
+                "direction": "out",
+                "name": "oHS",
+                "width": 10,
+                "is_clock": false,
+                "type_name": "[9:0]"
+            },
+            {
+                "direction": "out",
+                "name": "oDE",
+                "width": 1,
+                "is_clock": false,
+                "type_name": ""
+            },
+            {
+                "direction": "out",
+                "name": "sclo",
+                "width": 1,
+                "is_clock": false,
+                "type_name": ""
+            },
+            {
+                "direction": "out",
+                "name": "I2C_SCLK",
+                "width": 1,
+                "is_clock": false,
+                "type_name": ""
+            },
+            {
+                "direction": "out",
+                "name": "sdao",
+                "width": 4,
+                "is_clock": false,
+                "type_name": "[3:0]"
+            }
+        ]
+    },
+    "domains": {
+        "IntelSystem": {
+            "reset_kind": "Asynchronous",
+            "active_edge": "Rising",
+            "period": 10000,
+            "init_behavior": "Defined",
+            "reset_polarity": "ActiveHigh"
+        },
+        "XilinxSystem": {
+            "reset_kind": "Synchronous",
+            "active_edge": "Rising",
+            "period": 10000,
+            "init_behavior": "Defined",
+            "reset_polarity": "ActiveHigh"
+        },
+        "System": {
+            "reset_kind": "Asynchronous",
+            "active_edge": "Rising",
+            "period": 10000,
+            "init_behavior": "Defined",
+            "reset_polarity": "ActiveHigh"
+        }
+    },
+    "flags": [
+        20,
+        20
+    ],
+    "hash": "bc90c43ba909a308e6e097b5c68ca7528317adc4cc2060ee07c39093a3a81a15",
+    "files": [
+        {
+            "name": "HDMIComponent_shim.cpp",
+            "sha256": "041da469099bb246b9af31da3f3b1cced44743471daef811407910f73d4c18d8"
+        },
+        {
+            "name": "HDMIComponent.sdc",
+            "sha256": "77cc8b8bf4640189e46926c212ee9d8435a18d7a7cb251ccabc6e3642d61846b"
+        },
+        {
+            "name": "HDMIComponent.v",
+            "sha256": "6481963c5f62862ef3265df6cc2e103c1e4d390f91e814e6c9271a949473d7d6"
+        }
+    ]
+}
